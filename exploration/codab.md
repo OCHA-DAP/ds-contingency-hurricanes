@@ -26,8 +26,9 @@ from src.datasources import codab
 ```
 
 ```python
-codab.download_codab("jam")
-codab.download_codab("vct")
+# codab.download_codab("jam")
+# codab.download_codab("vct")
+codab.download_codab("grd")
 ```
 
 ```python
@@ -41,5 +42,9 @@ vct.plot(ax=ax)
 ```
 
 ```python
+grd = codab.load_codab("grd")
+```
 
+```python
+grd.plot()
 ```

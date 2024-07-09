@@ -5,7 +5,7 @@ import requests
 from src.utils import blob
 
 
-def download_codab(iso3: Literal["jam", "vct"]):
+def download_codab(iso3: Literal["jam", "vct", "grd"]):
     url = f"https://data.fieldmaps.io/cod/originals/{iso3}.shp.zip"
     response = requests.get(url)
     response.raise_for_status()
